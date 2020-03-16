@@ -8,6 +8,7 @@ $ appcenter apps create -d myapp -o Android -p
 
 $ appcenter codepush release-react -a singlepageprogrammer-gmail.com/Shahreyaran -d Production
 
+$ code-push release-react Shahreyaran android -d Production
 
 const codePushOptions = {
   checkFrequency: codePush.CheckFrequency.ON_APP_START,
