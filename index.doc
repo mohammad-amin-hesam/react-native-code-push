@@ -1,0 +1,22 @@
+$ npm install -g appcenter-cli
+$ appcenter login
+$ appcenter apps create -d myapp -o Android -p
+
+>> use the following resource:
+  https://docs.microsoft.com/en-us/appcenter/distribution/codepush/react-native
+===============================================================================
+
+$ appcenter codepush release-react -a singlepageprogrammer-gmail.com/Shahreyaran -d Production
+
+
+const codePushOptions = {
+  checkFrequency: codePush.CheckFrequency.ON_APP_START,
+  InstallMode: codePush.InstallMode.IMMEDIATE
+};
+
+
+  useEffect(() => {
+    codePush.sync({
+      initialMode: codePush.InstallMode.IMMEDIATE
+    });
+  }, []);
