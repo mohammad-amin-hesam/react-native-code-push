@@ -21,3 +21,6 @@ const codePushOptions = {
       initialMode: codePush.InstallMode.IMMEDIATE
     });
   }, []);
+
+
+$ code-push deployment clear Shahreyaran Production
